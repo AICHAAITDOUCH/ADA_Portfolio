@@ -281,7 +281,7 @@ img {
 .home__prefil{
   width: 320px;
   justify-self: center;
-  border-radius: 90%;
+  /* border-radius: 90%; */
 }
 
 .home__shadow, .home__info, .home__social, .home__cv{
@@ -561,9 +561,6 @@ img {
   font-size: var(--small-font-size);
 }
 
-.projects__img{
-  border-radius: 1.5rem;
-}
 
 .projects__button{
   display: grid;
@@ -1461,7 +1458,7 @@ img {
   }
   
   .home__prefil{
-    width: 600px;
+    /* width: 600px; */
   }
   
   .home__image .blob-animate{
@@ -1605,7 +1602,7 @@ img {
   
   .projects__img{
     width: 100%;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
   }
   
   .projects__button{
