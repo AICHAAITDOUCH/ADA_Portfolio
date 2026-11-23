@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'exception d'Aicha Ait Douch - Développeuse Web Full Stack. Projets React, Laravel, PHP, JavaScript, Python.">
+  <meta name="author" content="Aicha Ait Douch">
+
+  <title>Aicha Ait Douch | Senior Full Stack Web Developer</title>
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+  <!--=============== STYLESHEET ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!--=============== PRELOADER ===============-->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">A<span>D</span>A</div>
+    <div class="preloader__counter" id="preloader-counter">0</div>
+    <div class="preloader__bar">
+      <div class="preloader__progress" id="preloader-progress"></div>
+    </div>
+  </div>
+
+  <!--=============== AMBIENT BACKGROUND CANVAS ===============-->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!--=============== CUSTOM CURSOR ===============-->
+  <div class="cursor-glow" id="cursor"></div>
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="nav__logo">A<span>D</span>A</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Accueil</a></li>
+          <li><a href="#about" class="nav__link">À propos</a></li>
+          <li><a href="#skills" class="nav__link">Compétences</a></li>
+          <li><a href="#experience" class="nav__link">Expériences</a></li>
+          <li><a href="#education" class="nav__link">Formation</a></li>
+          <li><a href="#projects" class="nav__link">Projets</a></li>
+          <li><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+
+    <!--==================== HERO ====================-->
+    <section class="hero section" id="home">
+      <div class="container grid hero__container">
+        <div class="hero__data">
+          <div class="hero__status-badge">
+            <span class="status-dot"></span>
+            <span>Disponible pour opportunités & Stage Full Stack</span>
+          </div>
+
+          <h1 class="hero__title">
+            Bonjour, je suis <br>
+            <span class="gradient-text">Aicha Ait Douch</span>
+          </h1>
+          <h2 class="hero__profession gradient-text-primary">Développeuse Web Full Stack</h2>
+
+          <p class="hero__description">
+            Passionnée par l'ingénierie logicielle et les technologies web modernes. Titulaire d'une licence en génie industriel et diplômée en développement digital, je conçois des solutions applicatives robustes, évolutives et centrées sur l'expérience utilisateur.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn-glow">
+              <i class="ri-rocket-line"></i> Explorer mes projets
+            </a>
+            <a href="#contact" class="btn btn-outline-glow">
+              <i class="ri-mail-send-line"></i> Me contacter
+            </a>
+            <a href="assets/pdf/Ait-Douch Aicha.pdf" download target="_blank" class="btn btn-secondary-glow">
+              <i class="ri-file-download-line"></i> Télécharger CV
+            </a>
+          </div>
+
+          <div class="hero__socials">
+            <span class="hero__social-text">Réseaux :</span>
+            <div class="hero__social-links">
+              <a href="https://github.com/AICHAAITDOUCH" target="_blank" class="social-btn" aria-label="GitHub">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/aicha-ait-douch-20083b363" target="_blank" class="social-btn" aria-label="LinkedIn">
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a href="mailto:aitdouchaicha2@gmail.com" class="social-btn" aria-label="Email">
+                <i class="ri-mail-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="hero__glow-orb"></div>
+          <div class="hero__image-frame">
+            <img src="assets/img/tesimg.jpg" alt="Aicha Ait Douch" class="hero__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-user-3-line"></i> Présentation</span>
+          <h2 class="section__title">À propos de moi</h2>
+          <p class="section__subtitle">Allier logique de l'ingénierie et créativité du développement Full Stack</p>
+        </div>
+
+        <div class="grid about__grid">
+          <div class="glass-card about__content">
+            <p class="about__text">
+              Stagiaire en développement digital à la <strong>Cité des Métiers et des Compétences de Rabat-Salé-Kénitra</strong> et titulaire d'une <strong>licence en génie industriel</strong>, j'allie la rigueur scientifique de l'ingénierie à la maîtrise du code web.
+            </p>
+            <p class="about__text">
+              Curieuse, autonome et dotée d'un fort esprit d'équipe, je prends plaisir à résoudre des défis complexes et à transformer des besoins métiers en applications web fluides et performantes. Je suis actuellement à la recherche d'une opportunité de stage stimulante.
+            </p>
+
+            <div class="about__stats-grid">
+              <div class="stat-box">
+                <div class="stat-box__number gradient-text">10+</div>
+                <div class="stat-box__label">Projets Réalisés</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-box__number gradient-text">12+</div>
+                <div class="stat-box__label">Technologies Maîtrisées</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-box__number gradient-text">2+</div>
+                <div class="stat-box__label">Années de Formation Pro</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-box__number gradient-text">2</div>
+                <div class="stat-box__label">Stages Réussi</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- Languages card -->
+            <div class="glass-card languages-card">
+              <h3 class="languages-title">
+                <i class="ri-translate-2 gradient-text-primary"></i> Langues Parlées
+              </h3>
+              <div class="language-tags">
+                <div class="lang-pill">
+                  <span>Arabe</span>
+                  <!-- <span class="lang-pill__level">Maternelle</span> -->
+                </div>
+                <div class="lang-pill">
+                  <span>Tamazight</span>
+                  <!-- <span class="lang-pill__level">Maternelle</span> -->
+                </div>
+                <div class="lang-pill">
+                  <span>Français</span>
+                  <!-- <span class="lang-pill__level">Courant</span> -->
+                </div>
+                <div class="lang-pill">
+                  <span>Anglais</span>
+                  <!-- <span class="lang-pill__level">Technique</span> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft skills card -->
+            <div class="glass-card languages-card">
+              <h3 class="languages-title">
+                <i class="ri-star-smile-line gradient-text-primary"></i> Atouts Majeurs
+              </h3>
+              <div class="language-tags">
+                <div class="lang-pill">Apprentissage rapide</div>
+                <div class="lang-pill">Esprit d'équipe</div>
+                <div class="lang-pill">Rigueur & Analyse</div>
+                <div class="lang-pill">Résolution de problèmes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-code-s-slash-line"></i> Stack Technique</span>
+          <h2 class="section__title">Compétences & Outils</h2>
+          <p class="section__subtitle">Technologies front-end, back-end et outils de développement maîtrisés</p>
+        </div>
+
+        <!-- Category 1: Front-end -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="ri-layout-4-line gradient-text-primary"></i> Front-End Development
+          </h3>
+          <div class="skills__grid">
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/HTML.png" alt="HTML5"></div>
+              <span class="skill-card__name">HTML5</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/CSS.png" alt="CSS3"></div>
+              <span class="skill-card__name">CSS3</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/js.png" alt="JavaScript"></div>
+              <span class="skill-card__name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/react.png" alt="React.js"></div>
+              <span class="skill-card__name">React</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/bootstrap.png" alt="Bootstrap"></div>
+              <span class="skill-card__name">Bootstrap</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/web.png" alt="Responsive Design"></div>
+              <span class="skill-card__name">Responsive Design</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 95%;"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 2: Back-end -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="ri-server-line gradient-text-primary"></i> Back-End & Databases
+          </h3>
+          <div class="skills__grid">
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/pp.png" alt="PHP"></div>
+              <span class="skill-card__name">PHP</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/laravel.webp" alt="Python">
+              </div>
+              <span class="skill-card__name">Laravel</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/pyton.png" alt="laravel"></div>
+              <span class="skill-card__name">Python</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 75%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/sql.png" alt="MySQL"></div>
+              <span class="skill-card__name">MySQL</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 85%;"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 3: Tools -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="ri-tools-line gradient-text-primary"></i> Langages C/C++ & Outils
+          </h3>
+          <div class="skills__grid">
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon">
+                <i class="ri-cpu-line gradient-text" style="font-size: 2.5rem;"></i>
+              </div>
+              <span class="skill-card__name">Langage C / C++</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 75%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon">
+                <i class="ri-github-fill gradient-text" style="font-size: 2.5rem;"></i>
+              </div>
+              <span class="skill-card__name">Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="glass-card skill-card">
+              <div class="skill-card__icon"><img src="assets/img/wordpress.png" alt="WordPress"></div>
+              <span class="skill-card__name">WordPress</span>
+              <div class="skill-bar"><div class="skill-bar__progress" style="width: 70%;"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== EXPERIENCE ====================-->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-briefcase-4-line"></i> Expérience Professionnelle</span>
+          <h2 class="section__title">Parcours Professionnel & Stage</h2>
+          <p class="section__subtitle">Mes contributions concrètes en entreprise et projets de formation</p>
+        </div>
+
+        <div class="timeline">
+
+           <div class="timeline__item">
+            <div class="timeline__node"></div>
+            <div class="glass-card timeline__card">
+              <span class="timeline__year">2025 - 2026</span>
+              <h3 class="timeline__title">Stage -  Développement d'une application web de gestion financière</h3>
+              <div class="timeline__institution">Entreprise IKIDO TRAVAUX </div>
+              <p class="timeline__desc">
+                La gestion financière de l'entreprise reposait sur Excel et des enregistrements manuels, rendant le suivi complexe, lent et sujet aux erreurs. 
+                Développement d'une application web de gestion centralisée des projets et des finances, permettant un suivi simple, rapide et précis des 
+                données. 
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__node"></div>
+            <div class="glass-card timeline__card">
+              <span class="timeline__year">2022 - 2023</span>
+              <h3 class="timeline__title">Stage - Développement de la GMAO</h3>
+              <div class="timeline__institution">Entreprise URBAIN WAT</div>
+              <p class="timeline__desc">
+                Contribution au développement d'une application de Gestion de Maintenance Assistée par Ordinateur (GMAO). Optimisation des processus de maintenance, numérisation des fiches d'intervention et assistance technique.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__node"></div>
+            <div class="glass-card timeline__card">
+              <span class="timeline__year">2023 - 2024</span>
+              <h3 class="timeline__title">Formation Développement Web & Projets Numériques</h3>
+              <div class="timeline__institution">Simplon</div>
+              <p class="timeline__desc">
+                Programmation intensive HTML, CSS et langage C. Réalisation de projets numériques concrets, conception et gestion de bases de données relationnelles.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== EDUCATION ====================-->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-graduation-cap-line"></i> Formation Académique</span>
+          <h2 class="section__title">Diplômes & Parcours Scolaire</h2>
+          <p class="section__subtitle">Mes diplômes en ingénierie et développement web digital</p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline__item">
+            <div class="timeline__node"></div>
+            <div class="glass-card timeline__card">
+              <span class="timeline__year">2024 - 2026</span>
+              <h3 class="timeline__title">Diplôme Technicien Spécialisé Développement Digital (Option Web Fullstack)</h3>
+              <div class="timeline__institution">Cité des Métiers et des Compétences, Rabat-Salé-Kénitra</div>
+              <p class="timeline__desc">
+                Formation approfondie aux architectures Web Full Stack : React, Laravel, PHP, REST API, MySQL, méthodologies agiles et déploiement applicatif.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__node"></div>
+            <div class="glass-card timeline__card">
+              <span class="timeline__year">2020 - 2023</span>
+              <h3 class="timeline__title">Licence en Génie Industriel</h3>
+              <div class="timeline__institution">Université Abdelmalek Essaâdi, Tanger</div>
+              <p class="timeline__desc">
+                Apprentissage de la modélisation de processus, de la résolution méthodique de problèmes, de l'optimisation industrielle et de la rigueur scientifique.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__node"></div>
+            <div class="glass-card timeline__card">
+              <span class="timeline__year">2019 - 2020</span>
+              <h3 class="timeline__title">Baccalauréat Sciences et Technologies Électriques</h3>
+              <div class="timeline__institution">Lycée Technique Al Idrissi, Agadir</div>
+              <p class="timeline__desc">
+                Bases solides en systèmes électroniques, logique combinatoire et génie électrique.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PROJECTS ====================-->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-folder-code-line"></i> Réalisations</span>
+          <h2 class="section__title">Projets Développés</h2>
+          <p class="section__subtitle">Découvrez mes applications phares avec liens de démo et code source GitHub</p>
+        </div>
+
+        <!-- Featured Projects Grid (Large Cards with Demo & GitHub links) -->
+        <div class="projects__featured-grid">
+
+          <!-- Project 1 -->
+          <article class="glass-card project-card-large">
+            <div class="project-card-large__image">
+              <span class="project-card-large__badge">Projet d'Équipe • 2025-2026</span>
+              <img src="assets/img/gestionADS.png" alt="Gestion Absences" class="project-card-large__img">
+            </div>
+            <div class="project-card-large__content">
+              <div>
+                <h3 class="project-card-large__title">Application de Gestion des Absences</h3>
+                <p class="project-card-large__desc">
+                  Application web réalisée en équipe permettant la gestion administrative complète des absences : centraliser les données des stagiaires, réduire les erreurs humaines, générer des statistiques automatiques et faciliter la consultation en temps réel.
+                </p>
+                <div class="project-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Laravel</span>
+                  <span class="tech-tag">REST API</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+              <div class="project-card-large__actions">
+                <a href="https://github.com/AICHAAITDOUCH/Gestionne_Absence" target="_blank" class="btn btn-glow">
+                  <i class="ri-github-line"></i> Voir sur GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass-card project-card-large">
+            <div class="project-card-large__image">
+              <span class="project-card-large__badge">E-Commerce • 2024-2025</span>
+              <img src="assets/img/Plateforme E-Commerce.png" alt="VirtualStore" class="project-card-large__img">
+            </div>
+            <div class="project-card-large__content">
+              <div>
+                <h3 class="project-card-large__title">VirtualStore - Plateforme E-Commerce</h3>
+                <p class="project-card-large__desc">
+                  Plateforme e-commerce complète : gestion des produits avec variantes (tailles, volumes, couleurs), panier intelligent et flexible, système de commande avec suivi de statut, gestion des coupons de réduction et interface d'administration avancée.
+                </p>
+                <div class="project-tags">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">Laravel</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Bootstrap</span>
+                </div>
+              </div>
+              <div class="project-card-large__actions">
+                <a href="https://github.com/AICHAAITDOUCH/-VirtualStore" target="_blank" class="btn btn-glow">
+                  <i class="ri-github-line"></i> Voir sur GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass-card project-card-large">
+            <div class="project-card-large__image">
+              <span class="project-card-large__badge">Caisse Intelligente • 2024-2025</span>
+              <img src="assets/img/cassier.png" alt="Gestion Caissier" class="project-card-large__img">
+            </div>
+            <div class="project-card-large__content">
+              <div>
+                <h3 class="project-card-large__title">Gestion Caissier (Scan QR Code)</h3>
+                <p class="project-card-large__desc">
+                  Application de caisse inspirée du fonctionnement des grandes surfaces : scan instantané des produits par QR Code, calcul automatique du total des achats et gestion automatisée du stock d'articles.
+                </p>
+                <div class="project-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">QR Scanner</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+              <div class="project-card-large__actions">
+                <a href="https://github.com/AICHAAITDOUCH/gestion_cassier" target="_blank" class="btn btn-glow">
+                  <i class="ri-github-line"></i> Voir sur GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Other Projects Grid -->
+        <h3 class="projects__other-heading">Autres Réalisations Pro & Académiques</h3>
+        <div class="projects__compact-grid">
+
+          <div class="glass-card project-card-compact">
+            <div>
+              <div class="project-card-compact__header">
+                <i class="ri-calendar-event-line project-card-compact__icon"></i>
+                <span class="project-card-compact__year">2025-2026</span>
+              </div>
+              <h4 class="project-card-compact__title">Gestion Financière (Stage IKIDO TRAVAUX)</h4>
+              <p class="project-card-compact__desc">
+                Développement d'une application web centralisée de suivi des projets et des finances pour remplacer la gestion manuelle sur Excel.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card-compact">
+            <div>
+              <div class="project-card-compact__header">
+                <i class="ri-store-3-line project-card-compact__icon"></i>
+                <span class="project-card-compact__year">2024-2025</span>
+              </div>
+              <h4 class="project-card-compact__title">IKIDO - Chocolat Naturel Caroube</h4>
+              <p class="project-card-compact__desc">
+                Site web pour un projet entrepreneurial de chocolat naturel à base de caroube, alternative saine au chocolat industriel.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JS</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card-compact">
+            <div>
+              <div class="project-card-compact__header">
+                <i class="ri-file-user-line project-card-compact__icon"></i>
+                <span class="project-card-compact__year">2025-2026</span>
+              </div>
+              <h4 class="project-card-compact__title">Projet Gestion des Stages</h4>
+              <p class="project-card-compact__desc">
+                Application web facilitant la publication des offres de stage, le dépôt des candidatures et le suivi des évaluations.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card-compact">
+            <div>
+              <div class="project-card-compact__header">
+                <i class="ri-calendar-event-line project-card-compact__icon"></i>
+                <span class="project-card-compact__year">2024-2025</span>
+              </div>
+              <h4 class="project-card-compact__title">Application Activités & Sorties</h4>
+              <p class="project-card-compact__desc">
+                Application web permettant de proposer, réserver et rejoindre des activités culturelles et sorties en communauté.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JS</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card-compact">
+            <div>
+              <div class="project-card-compact__header">
+                <i class="ri-task-line project-card-compact__icon"></i>
+                <span class="project-card-compact__year">2024-2025</span>
+              </div>
+              <h4 class="project-card-compact__title">To-Do Liste Intelligente</h4>
+              <p class="project-card-compact__desc">
+                Application web pour organiser, sécuriser et gérer facilement les tâches quotidiennes avec persistance en base de données.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card-compact">
+            <div>
+              <div class="project-card-compact__header">
+                <i class="ri-sun-cloudy-line project-card-compact__icon"></i>
+                <span class="project-card-compact__year">2023-2024</span>
+              </div>
+              <h4 class="project-card-compact__title">Météo Application API</h4>
+              <p class="project-card-compact__desc">
+                Application web affichant en temps réel la météo et la température d'une ville grâce à l'intégration d'une API externe.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Fetch API</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CERTIFICATIONS & ROBOTICS ====================-->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-award-line"></i> Certifications & Engagements</span>
+          <h2 class="section__title">Club Robotics CMC & Certificats</h2>
+          <p class="section__subtitle">Certifications obtenues et engagements au sein du Club Robotics CMC</p>
+        </div>
+
+        <div style="margin-bottom: 3rem;" class="glass-card about__content">
+          <h3 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 1rem;">
+            <i class="ri-robot-line gradient-text"></i> Club Robotics CMC - Co-formatrice & Membre Active
+          </h3>
+          <p class="about__text">
+            Le Club Robotics de la Cité des Métiers et des Compétences est un espace dédié à la robotique, l'électronique et la programmation. En tant que membre organisatrice et co-formatrice, j'anime des ateliers pratiques (Arduino, C++, conception de circuits PCB) et participe à l'accueil de délégations internationales (Japon, Jordanie).
+          </p>
+        </div>
+
+        <!-- Interactive Lightbox Gallery for Certifications & Robotics -->
+        <div class="gallery-grid">
+          <div class="glass-card gallery-card" data-src="assets/img/certificat html.png">
+            <img src="assets/img/certificat html.png" alt="Certificat HTML" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Certificat HTML</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/certificat CSS.png">
+            <img src="assets/img/certificat CSS.png" alt="Certificat CSS" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Certificat CSS</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/certificat Javascript.jpg">
+            <img src="assets/img/certificat Javascript.jpg" alt="Certificat JavaScript" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Certificat JavaScript</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/Certificate _ Python_page-0001.jpg">
+            <img src="assets/img/Certificate _ Python_page-0001.jpg" alt="Certificat Python" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Certificat Python</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/Image3 .jpeg">
+            <img src="assets/img/Image3 .jpeg" alt="Robotics Visite Japonaise" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Club Robotics - Visite Japonaise</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/Image1 .jpeg">
+            <img src="assets/img/Image1 .jpeg" alt="Robotics Circuit Design" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Club Robotics - Circuit Design</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/Image2 .jpeg">
+            <img src="assets/img/Image2 .jpeg" alt="Robotics Visite Jordanie" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Club Robotics - Visite Jordanie</span>
+            </div>
+          </div>
+
+          <div class="glass-card gallery-card" data-src="assets/img/Image4.jpeg">
+            <img src="assets/img/Image4.jpeg" alt="Robotics Compétition" class="gallery-card__img">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__title">Club Robotics - Compétition</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== LIGHTBOX MODAL ====================-->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox__content">
+        <button class="lightbox__close" id="lightbox-close"><i class="ri-close-line"></i></button>
+        <button class="lightbox__prev" id="lightbox-prev"><i class="ri-arrow-left-s-line"></i></button>
+        <img src="" alt="Certificate Lightbox" class="lightbox__img" id="lightbox-img">
+        <button class="lightbox__next" id="lightbox-next"><i class="ri-arrow-right-s-line"></i></button>
+      </div>
+    </div>
+
+    <!--==================== CONTACT ====================-->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag"><i class="ri-mail-line"></i> Me Contacter</span>
+          <h2 class="section__title">Travaillons Ensemble</h2>
+          <p class="section__subtitle">À la recherche d'une stagiaire Full Stack passionnée ? Contactez-moi !</p>
+        </div>
+
+        <div class="grid contact__grid">
+
+          <div class="contact-info-list">
+            <a href="tel:+212617963412" class="glass-card contact-box">
+              <div class="contact-box__icon"><i class="ri-phone-line"></i></div>
+              <div>
+                <div class="contact-box__label">Téléphone / WhatsApp</div>
+                <div class="contact-box__val">+212 617 963 412</div>
+              </div>
+            </a>
+
+            <a href="mailto:aitdouchaicha2@gmail.com" class="glass-card contact-box">
+              <div class="contact-box__icon"><i class="ri-mail-send-line"></i></div>
+              <div>
+                <div class="contact-box__label">Adresse E-mail</div>
+                <div class="contact-box__val">aichadouch422@gmail.com</div>
+              </div>
+            </a>
+
+            <div class="glass-card contact-box">
+              <div class="contact-box__icon"><i class="ri-map-pin-line"></i></div>
+              <div>
+                <div class="contact-box__label">Localisation</div>
+                <div class="contact-box__val">Taroudant / Rabat, Maroc</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card contact__form-card">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="Name" class="form-label">Votre Nom</label>
+                <input type="text" id="Name" name="user_name" class="form-input" placeholder="ex: Jean Dupont" required>
+              </div>
+
+              <div class="form-group">
+                <label for="Email" class="form-label">Votre E-mail</label>
+                <input type="email" id="Email" name="user_email" class="form-input" placeholder="ex: jean.dupont@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="Message" class="form-label">Votre Message</label>
+                <textarea id="Message" name="message" class="form-textarea" placeholder="Bonjour Aicha, nous aimerions vous proposer une opportunité..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-glow" style="width: 100%;">
+                <i class="ri-send-plane-fill"></i> Envoyer le message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div>
+        <a href="#home" class="footer__logo">Aicha Ait Douch<span>.dev</span></a>
+        <p class="footer__subtitle"> Full Stack Web Developer</p>
+      </div>
+
+      <div class="footer__socials">
+        <a href="https://github.com/AICHAAITDOUCH" target="_blank" class="social-btn" aria-label="GitHub">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aicha-ait-douch-20083b363" target="_blank" class="social-btn" aria-label="LinkedIn">
+          <i class="ri-linkedin-line"></i>
+        </a>
+        <a href="mailto:aitdouchaicha2@gmail.com" class="social-btn" aria-label="Email">
+          <i class="ri-mail-line"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      &copy; 2026 <span>Aicha Ait Douch</span>. Tous droits réservés.
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <div class="scroll-top-btn" id="scroll-top" aria-label="Retour en haut">
+    <i class="ri-arrow-up-line"></i>
+  </div>
+
+  <!--=============== EMAILJS ===============-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
