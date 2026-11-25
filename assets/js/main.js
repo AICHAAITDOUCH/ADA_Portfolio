@@ -311,3 +311,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+/*============EmailJS==========*/ 
+  emailjs.init({
+    publicKey: "NBU4pGaejsasx-5xk",
+  });
+
+  const contactForm = document.getElementById("contact-form");
+
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const button = contactForm.querySelector('button[type="submit"]');
+    const originalText = button.innerHTML;
+
+    button.disabled = true;
+    button.innerHTML = "Envoi en cours...";
+
+    emailjs.sendForm(
+      "service_0zllxbu",
+      "template_lm9myx6",
+      contactForm
+    )
+    .then(() => {
+      alert("Votre message a été envoyé avec succès !");
+      contactForm.reset();
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      alert("Erreur lors de l'envoi. Veuillez réessayer.");
+    })
+    .finally(() => {
+      button.disabled = false;
+      button.innerHTML = originalText;
+    });
+  });
